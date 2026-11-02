@@ -86,10 +86,14 @@ Listo cuando: el link de `ox-test` abre el cliente y CI pasa.
 | 1 | Más oros |
 | 1 | 7 de velo (7 de oros) |
 | 1 / 2 | Primera / primera real (los cuatro 7) |
-| 3 | Real en mano |
-| 4 | Real en mesa |
+| 3 | Real en mano: las 3 cartas repartidas suman 15 |
+| 4 | Real en mesa: las 4 cartas iniciales de la mesa suman 15 (para el que reparte) |
 
 - Primera: mejor carta de cada pinta con la escala 7 (21), 6 (18), As (16), 5 (15), 4 (14), 3 (13), 2 (12), figuras (10). Hay que tener las cuatro pintas.
+- Real en mano: se canta con un botón solo en el primer turno del jugador; las 3 cartas quedan a la vista en su pozo y no se juegan.
+- Real en mesa: el que reparte se lleva las 4 cartas a la vista y no juega ese turno.
+- Los reales son opcionales y no se avisan: si el jugador no lo canta, lo pierde. No cuentan como escoba.
+- Cada escoba deja una carta a la vista en el pozo del jugador, tapada con el resto de la captura.
 - Empate en cartas, oros o primera: nadie se lleva el punto.
 - Partida a 15 o 21, configurable.
 
@@ -98,7 +102,7 @@ Listo cuando, con tests de propiedades:
 - Los puntos repartidos en cada mano cuadran con la tabla.
 
 ### 2. Bots y simulador
-- Fácil: la captura más grande.
+- Fácil: la captura más grande. A veces no ve un real.
 - Medio: valora oros, sietes y el 7 de velo, y evita dejar en mesa una suma que dé escoba al siguiente.
 - Difícil: cuenta cartas y Monte Carlo.
 
@@ -120,7 +124,8 @@ Listo cuando: se juega una partida completa en el celular.
 
 - `SpanishCard` copiado de Brisca.
 - Al tocar una carta se iluminan las combinaciones posibles para elegir. Animación de "¡Escoba!" al limpiar la mesa.
+- Botón "¡Real!" en el primer turno, sin aviso de que hay real. Reales y escobas quedan a la vista en el pozo de cada jugador.
 
 ## Pendiente
 
-- Qué cuenta como real en mano y real en mesa, si se cantan y si el real en mesa también es escoba.
+- Confirmar que con real en mesa el que reparte no juega ese turno.
