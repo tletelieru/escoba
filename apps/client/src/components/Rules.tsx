@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { useLocale, useMessages } from '../i18n/messages'
 import { rulesText } from '../i18n/rules'
 import { Overlay } from './Overlay'
+import { RuleExample } from './RuleExample'
+import { RULE_EXAMPLES } from './ruleExamples'
 
 export function Rules({ onClose }: { onClose: () => void }) {
   const t = useMessages()
@@ -24,11 +26,14 @@ export function Rules({ onClose }: { onClose: () => void }) {
           </button>
         ))}
       </div>
-      <ul className="flex flex-col gap-2 text-sm leading-tight">
+      <ul className="flex flex-col gap-3 text-sm leading-tight">
         {section.rules.map((rule) => (
           <li key={rule} className="flex gap-2">
             <span aria-hidden="true" className="mt-1 size-2 shrink-0 bg-gold" />
-            {rule}
+            <span className="flex min-w-0 flex-col gap-1.5">
+              {text.text[rule]}
+              <RuleExample parts={RULE_EXAMPLES[rule]} />
+            </span>
           </li>
         ))}
       </ul>
