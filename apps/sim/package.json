@@ -8,6 +8,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@escoba/bots": "workspace:*",
     "@escoba/engine": "workspace:*"
   },
   "devDependencies": {
