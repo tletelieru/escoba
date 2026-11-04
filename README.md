@@ -5,6 +5,12 @@ on your phone or computer.
 
 No account and no backend. Everything runs on your device, and your match is saved after every move.
 
+<p align="center">
+  <img src="docs/home.png" alt="Start screen with difficulty, number of players and points per hand" width="260" />
+  <img src="docs/table.png" alt="A hand against one bot, with four cards on the table" width="260" />
+  <img src="docs/summary.png" alt="End of hand summary with points and the cards behind them" width="260" />
+</p>
+
 - **Players:** 2 or 3, or 4 in pairs
 - **Deck:** Spanish deck, 40 cards
 - **Live:** https://tletelieru.github.io/escoba/
@@ -31,6 +37,11 @@ Drop a card that could have made 15 and anyone else can **soplar** it: pick thos
 
 Reales are never hinted: call them with the **Real!** button or lose them. Ties give the point to
 nobody. The match goes to 15 points. The full rules, with example cards, are inside the game.
+
+<p align="center">
+  <img src="docs/rules.png" alt="Rules with example cards" width="260" />
+  <img src="docs/history.png" alt="Match history with wins and losses" width="260" />
+</p>
 
 ## What you get
 
